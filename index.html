@@ -30,7 +30,8 @@
 
 		        <div class="col-lg-4">
 		           <div class="profile-card-4 z-depth-3">
-		            <div class="card">
+		            <div class="card" onclick="myfunction()">
+		            	<span class="myvalue" id="myvalue" hidden>0</span> 
 		              <div class="card-body text-center bg-info rounded-top">
 		               <div class="user-box">
 		                <img src="img/photo.jpg" alt="user avatar">
@@ -353,5 +354,19 @@
 		    </div>
 
 		</div>
+		<script type="text/javascript">
+			function myfunction(){
+				var myspan = document.getElementById('myvalue');
+				var value = Number(myspan.textContent);
+				if (value>=3){
+					myspan.textContent = 0;
+					window.location.href = "task09April2020.html";
+				}
+				else{
+					myspan.textContent = value + 1;
+				}
+
+			}
+		</script>
 	</body>
 </html>

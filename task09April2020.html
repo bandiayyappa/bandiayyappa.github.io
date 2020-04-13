@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>my profile</title>
+	<meta name="viewport" content="width=dedevice-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style2.css">
+</head>
+<body>
+	<div class="maincard">
+	<div class="leftcard">
+		<div class="topcard">
+			<img src="img/photo.jpg" class="image">
+			<h5>Ayyappa</h5>
+			<h5>Multi Skill Trainer-APSSDC</h5>
+		</div>
+		<div class="middlecard">
+			<a href="mailto:ayyappa.bandi@apssdc.in">
+				<img src="img/gmail.svg">
+			</a>
+			<a href="https://www.github.com/bandiayyappa">
+				<img src="img/github-image.svg">
+			</a>
+			<a href="tel:8686853606">
+				<img src="img/call.svg">
+			</a>
+		</div>
+		<div class="bottomcard">
+			<button onclick="myFunction('profile')">
+				profile
+			</button>
+			<button onclick="myFunction('technicals')">
+				Skills
+			</button>
+			<button onclick="myFunction('certifications')">
+				Certifications
+			</button>
+		</div>
+	</div>
+	<div class="rightcard">
+		<div class="profile" id="profile">
+			<h4>About Me</h4>
+			<p>Python Web Developer/Trainer in APSSDC</p>
+
+			<h4>Work-Experience</h4>
+			<ul>
+				<li>Working in APSSDC from last 3 years.</li>
+				<li>
+					In this journey with APSSDC, i got experience in Python,Web Development ( Flask and Django ) , Machine Learning and many more.
+				</li>
+				<li>
+					I have trained more than 3500+ students and guided them to develop different type of applications.
+				</li>
+				<li>
+					Organised and Involved in Faculty Improvement programs which was conducted for faculty by APSSDC in association with Google.
+				</li>
+			</ul>
+		</div>
+
+		<div class="skills" id="technicals">
+			<h4>Technical Skills</h4>
+			<ul>
+				<li>Python</li> 
+				<li>Web Development</li> 
+				<li>Flask</li> 
+				<li>Django</li>
+				<li>Machine Learning</li> 
+				<li>HTML</li> 
+				<li>Git</li>
+				<li>css</li>
+				<li>Bootstrap</li> 
+				<li>SQLite</li> 
+				<li>MySQL</li> 
+				<li>Javascript</li>
+			</ul>
+		</div>
+		<div class="certifications" id="certifications">
+			<h4>Certifications</h4>
+			<ul>
+				<li>Python for Everybody Specialization</li>
+				<li>Full Stack Web Developer Nanodegree</li>
+				<li>
+					Applied Data Science with Python Specialization
+				</li>
+				<li>
+					Applied Machine Learning in Python
+				</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+	<script>
+		function myFunction(item) {
+			alert(item);
+		  var array = ['profile','certifications','technicals'];
+		  for(i of array){
+		  	if (item === i){
+		  		document.getElementById(i).style.display = 'block';
+		  	}
+		  	else{
+		  		document.getElementById(i).style.display = 'none';
+		  	}
+		  }
+		}
+	</script>
+
+</body>
+</html>

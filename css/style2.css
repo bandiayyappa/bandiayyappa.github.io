@@ -1,0 +1,52 @@
+.maincard{
+	width: 1300px;
+	margin-top: 25px;
+}
+ 
+.image{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+}
+
+.middlecard{
+	text-align: center;
+}
+
+.middlecard img{
+    height: 30px;
+    margin-right: 15px;
+}
+
+.topcard{
+	text-align: center;
+}
+
+.bottomcard{
+	margin-top: 10px;
+
+}
+.leftcard{
+	width: 400px;
+    height: 400px;
+    background: #17a2b817;
+    text-align: center;
+    float: left;
+}
+
+.skills,.certifications{
+	margin-left: 45px;
+	display: none;
+}
+.profile{
+	margin-left: 45px;
+}
+.rightcard{
+
+    height: 400px;
+    margin-left: 400px;
+}
